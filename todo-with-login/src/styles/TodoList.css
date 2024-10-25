@@ -1,0 +1,170 @@
+/* TodoList.css */
+
+.container {
+    max-width: 60%; /* Increase max-width to make the container larger */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    width: 100%; /* Set width to 100% to match the container */
+    margin-bottom: 20px;
+    padding: 20px; /* Add padding for visual appeal */
+    border: 1px solid #ddd; /* Add border for separation */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+input[type="text"] {
+    width: calc(100% - 22px); /* Full width minus padding */
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* .description-input {
+    height: 80px; 
+} */
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Add spacing between buttons */
+    margin-top: 10px;
+}
+
+button {
+    background-color: #0ABAB5; /* Tiffany blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #009C98; /* Darker shade for hover effect */
+}
+
+.table {
+    width: 100%; /* Ensure table is full width */
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: auto; /* Change to auto layout for flexibility */
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    word-wrap: break-word; /* Ensure words wrap */
+    overflow-wrap: break-word; /* Break long words if necessary */
+    min-width: 100px; /* Set a minimum width for cells */
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table td {
+    max-width: 200px; /* Keep max-width for larger content */
+    min-width: 100px; /* Set a minimum width for flexibility */
+}
+
+/* Adjust the cell that contains the buttons */
+.table td.button-container {
+    padding: 30; /* Remove padding to eliminate extra space */
+    text-align: center; /* Align buttons to the left */
+    vertical-align: middle;
+}
+
+.edit-form {
+    vertical-align: middle;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.edit-form h2 {
+    margin-top: 0;
+}
+
+.edit-form .form-group {
+    margin-bottom: 15px;
+    width: 100%; /* Ensure edit form group matches width */
+}
+
+/* Dropdown Styling */
+select {
+    width: calc(100% - 22px); /* Full width minus padding */
+    vertical-align: middle;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text */
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+select:hover {
+    border-color: #0ABAB5; /* Change border color on hover */
+}
+
+select:focus {
+    outline: none; /* Remove default outline */
+    border-color: #009C98; /* Darker border on focus */
+    background-color: #f8f8f8; /* Slightly grey background on focus */
+}
+@media (max-width: 768px) {
+    .table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .table th, .table td {
+        display: block;
+        text-align: right;
+    }
+
+    .table th {
+        text-align: left;
+    }
+
+    .table tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .table td {
+        text-align: left;
+        padding: 8px;
+        position: relative;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

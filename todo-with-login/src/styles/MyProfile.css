@@ -1,0 +1,46 @@
+.profile-container {
+    max-width: 90% !important; /* Adjusted max width */
+    margin: auto; /* Center the profile */
+    padding: 20px; /* Add some padding */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    background-color: #f9f9f9; /* Optional: Add a background color */
+}
+
+.form-grid {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.form-group {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.label {
+    flex: 1; /* Label takes up 1 part of the space */
+    margin-right: 10px; /* Space between label and input */
+}
+
+.input-field,
+.select-field {
+    flex: 2; /* Input fields take up 2 parts of the space */
+    padding: 8px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+}
+
+.button {
+    padding: 10px 15px; /* Button padding */
+    background-color: #0abab5; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    text-align: center I !important;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
